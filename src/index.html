@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>That's my portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas class="webgl"></canvas>
+
+<!-- Navbar -->
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo" ><a href="#">Navigation Menu</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">menu</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <!-- <div class="overlay"></div> -->
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span><br>
+                <span class="down">I am Shweta Kushwaha</span>
+            </h1>
+            <p class="header-subtitle">FRONTEND WEB DEVELOPER</p>
+
+            <!-- <button class="btn btn-primary">Visit My Works</button> -->
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section" >
+        <!-- container -->
+        
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-caption" id="about">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p class="about-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut
+                        fuga animi soluta quae eos non cupiditate voluptates dolorem, doloremque quos dicta quibusdam
+                        <br>
+                        impedit iure nemo a istem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident deserunt consectetur, maxime pariatur hic vero cupiditate dolorem repudiandae dolor distinctio fugiat optio incidunt iste quis aliquam? Ab odio iste debitis harum pariatur distinctio, architecto eum! Nesciunt tenetur accusantium, fugiat suscipit illo ipsa maxime, deleniti accusamus mollitia dolorem ab, perferendis blanditiis.
+
+                    </p>
+                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                </div>
+            </div><!-- end of about wrapper -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" >
+        <div class="services-block service-items" id="service">
+            <p class="section-subtitle">What I Do ?</p>
+            <h6 class="section-title mb-6">Services</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/pencil-case.svg"
+                                class="icon">
+                            <h6 class="title">Frontend Developer</h6>
+                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
+                                molestias dolorem iste quod.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/responsive.svg" class="icon">
+                            <h6 class="title">Machine Learning Engineer</h6>
+                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
+                                molestias dolorem iste quod.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/toolbox.svg"
+                                class="icon">
+                            <h6 class="title">Data Analyst</h6>
+                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
+                                molestias dolorem iste quod.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/analytics.svg"
+                                class="icon">
+                            <h6 class="title">3D Modeller and Web Developer</h6>
+                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
+                                molestias dolorem iste quod.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="past-projects">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Past Projects</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="https://kushi-shweta.github.io/startup-funding-web/#" class="portfolio-card">
+                        <img src="assets/imgs/proj-1.png" class="portfolio-card-img">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Startup Funding Web</h5>
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://shweta-kush.github.io/Fitness-Club-Website/" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/proj-2.png" class="img-responsive rounded">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>3D Web Site</h5>
+                                    <p class="font-weight-normal">Category: 3D Web Developer</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://shweta-kush.github.io/Fitness-Club-Website/" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assests/imgs/proj-2.png" class="img-responsive rounded">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Fitness Club Website</h5>
+                                    <p class="font-weight-normal">Category: Web Developer</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+
+
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Want to work with me?</h6>
+                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="contact-me">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                            placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+
+
+    <script type="module" src="./scripts.js"></script>
+    
+</body>
+</html>
