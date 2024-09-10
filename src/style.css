@@ -74,7 +74,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #010718;
+  /* background-color: #010718; */
 } 
 
 [tabindex="-1"]:focus {
@@ -87,6 +87,7 @@ body {
     top: 0;
     left: 0;
     outline: none;
+    /* z-index: 1; */
 }
 
 
@@ -103,7 +104,7 @@ nav{
   position: fixed;
   top: 0;
   left: 0;
-  height: 70px;
+  height: 3rem;
   width: 100%;
   background-color: var(--primary);
   z-index: 100;
@@ -132,14 +133,14 @@ nav .nav-bar{
 
 nav .nav-bar .sidebarOpen{
   color: var(--text-color);
-  font-size: 25px;
+  font-size: 2rem;
   padding: 5px;
   cursor: pointer;
   display: none;
 }
 
 nav .nav-bar .logo a{
-  font-size: 25px;
+  font-size: 2rem;
   font-weight: 500;
   color: var(--text-color);
   text-decoration: none;
@@ -161,7 +162,7 @@ nav .nav-bar .logo a{
 
 .nav-links li a{
   position: relative;
-  font-size: 17px;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--text-color);
   text-decoration: none;
@@ -206,6 +207,8 @@ nav .nav-bar .logo a{
   position: absolute;
   color: var(--text-color);
   font-size: 22px;
+  /* border: 2px solid red; */
+
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -362,72 +365,64 @@ body.dark .search-field i{
 
 /* Navnar  ends*/
 
-    .header {
-      border: 1px solid yellow;
-      position: absolute;
-      width: 100%;
-      top: 15%;
-      height: 100vh;
-    }
-    
-    .header-content {
-      border: 1px solid red;
-      position: absolute; 
-      width: 45%;
-      right: 0;
-      padding: 1rem;
-    }
+.header {
+  /* position: absolute; */
+  width: 100%;
+  display: flex;
+  top: 10%;
+  height: 100vh;
+  align-items: center;
+}
+
+.header-content {
+  align-items: center;
+  position: absolute; 
+  width: 45%;
+  right: 0;
+  padding: 1rem;
+}
     
 
 .up{
   font-family: "Arlon-UltraBold", "sans-serif";
-  font-size: 6rem;
-  border: 1px solid green;
+  font-size: 4rem;
   margin: 0;
-  /* margin-bottom: 0.5rem; */
 }
 
 .down{
   font-family: "Hua-Black", "sans-serif";
-  font-size: 7rem;
-  border: 1px solid green;
+  font-size: 5rem;
   margin: 0;
-
-
 }
 
 .section{
   height: 100vh;
-  border: 1px solid aqua;
 }
 .about
 {
     display: flex;
-    /* align-items: center; */
     height: 100vh;
-    position: relative;
     width: 45%;
     justify-content: center;
     right: 0rem;
-    top: 100vh;
-    /* color: #ffeded; */
-    
     padding-left: 5%;
-    padding-top: 10%;
+    align-items: center;
     padding-right: 5%;
-    border: 3px solid blueviolet;
   }
-  
   /* .about-caption  */
-  .section-subtitle{
-  border: 3px solid rgb(0, 199, 47);
-  /* font: 3rem; */
-  text-align: center;
-  
+
+.about-caption{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-items: center; */
 }
+.section-subtitle{
+  text-align: center;  
+}
+
 .section-title{
   font-family: 'Arlon-UltraBold', sans-serif;
-  border: 3px solid blueviolet;
   font-size: 2rem;
   color: var(--primary);
   text-align: center;
@@ -436,49 +431,42 @@ body.dark .search-field i{
 
 .about-content {
   font-family: 'Arabic-light' ,sans-serif;
-  /* font-family: 'Mahameru-bold' ,sans-serif; */
-  border: 3px solid rgb(0, 199, 47);
-  /* color: red; */
   text-align: justify;
-
+  margin: 4%;
 }
 
 .services-block
+/* .services */
 {
     display: flex;
     flex-direction: column;
-    
-    /* align-items: center; */
-    height: 100vh;
-    position: relative;
-    /* width: 45%; */
-    justify-content: center;
-    right: 0;
-    top: 100vh;
-    /* color: #ffeded; */
-    
+    align-items: center;
+    height: 100%;
+    /* position: relative; */
+    justify-items: center;
+    /* right: 0; */
+    /* top: 100vh; */
     padding-left: 5%;
     padding-top: 5%;
     padding-right: 5%;
-    border: 3px solid red;
-  }
+    } 
 
-
+    
 .services-block .row{
   display: flex;
   flex-direction: row;
-  /* align-items: ; */
   justify-content: space-around;
   flex: 1;
   flex-wrap: wrap;
   padding-top: 5% ;
   height: 10rem;
-  
-  border: 2px solid blue;
+}
+.service-card{
+  border: 1px solid aliceblue;
+  margin: 2%;
 }
 .icon{
   height: 15rem; 
-  border: 1px solid red;
 }
 .body {
   display: flex;
@@ -486,13 +474,10 @@ body.dark .search-field i{
   align-items: center;
   width: 20rem;
   margin: 2%;
-  border: 5px solid orange;
 }
 .img-content{
   position: relative;
   top: 0px;
-  /* height: 15rem; */
-  border: 3px solid white;
 }
 
 .img-content .title, .subtitle{
@@ -500,33 +485,26 @@ body.dark .search-field i{
 }
 
 
-#portfolio
+.past-projects
 {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     height: 100vh;
-    position: relative;
-    /* width: 45%; */
     justify-content: center;
-    /* right: 0; */
-    top: 100vh;
     padding-left: 5%;
     padding-top: 5%;
     padding-right: 5%;
-    border: 3px solid rgb(20, 194, 220);
   }
 
 .past-projects .row{
   display: flex;
   flex-direction: row;
-  /* align-items: ; */
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
   flex: 1;
   flex-wrap: wrap;
-  /* padding-top: 5% ; */
-  height: 20rem;
-  border: 2px solid blue;
+  width: 100%;
   margin-top: 2%;
 }
 
@@ -538,11 +516,9 @@ body.dark .search-field i{
 }
 
 .col-md-4{
-  border: 3px solid red;
   height: 15rem;
   width: 25rem;
   margin: 2%;
-  
   position: relative;
 }
 
@@ -554,7 +530,6 @@ body.dark .search-field i{
   height: 100%;
   border-radius: 3rem;
   align-items: center;
-  
   background-color: var(--primary);
   color: #333; 
   opacity: 0; 
@@ -563,10 +538,8 @@ body.dark .search-field i{
 .portfolio-card-caption{
   align-items: center;
   justify-items: center;
-  /* justify-content: center; */
   top: 2rem;
   text-align: center;
-  border: 2px solid red;
 }
 
 .col-md-4:hover .portfolio-card-overlay {
@@ -581,11 +554,8 @@ body.dark .search-field i{
 .proj-img-text1{
   font-family: "SST-Arabic-Light" , sans-serif;
   text-align: justify;
-  /* width: 70%; */
   padding-left: 2%;
   padding-right: 2%;
-  border: 1px solid red;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -602,23 +572,14 @@ body.dark .search-field i{
 {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     height: 100vh;
-    position: relative;
-    /* width: 45%; */
     justify-content: center;
-    right: 0;
-    top: 100vh;
-    /* color: #ffeded; */
-    
     padding-left: 5%;
     padding-top: 5%;
     padding-right: 5%;
-    border: 3px solid red;
   }
 
 form{
-  border: 1px solid aqua;
   align-items: center;
   display: flex;
   margin-top: 2%;
@@ -626,9 +587,6 @@ form{
 }
 
 .form-row{
-  /* background-color:rgba(33, 37, 41, 0.8); */
-  /* opacity: 0.5%; */
-  border: 3px solid cyan;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -655,12 +613,10 @@ form{
 .text-area{
   border-radius: 3rem;
   background-color:rgba(33, 37, 41, 0.8);
-  
   font-size: 1.5rem;
   padding-left: 5%;
   padding-top: 2%;
   color: var(--body-color);
-  
   height: 10rem;
   width: 30rem;
 }
@@ -670,7 +626,6 @@ form{
   height: 3rem;
   font-size: 1rem;
   border-radius: 1rem;
-  /* background: liner-gradient(270deg, #20c997, #17a2b8); */
   background: linear-gradient(270deg, #6f42c1, #4070F4);
   cursor: pointer;
   justify-content: center;
@@ -680,5 +635,5 @@ form{
   justify-content: center;
   align-items: center;
   margin: 2%;
-  border: 1px solid thistle;
+  
 }
