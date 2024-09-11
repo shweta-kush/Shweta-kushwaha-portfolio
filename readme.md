@@ -13,4 +13,7 @@ npm run dev
 
 # Build for production in the dist/ directory
 npm run build
+
+THE DEPLOYED LINK:
+https://shweta-kushwaha.vercel.app/
 ```
